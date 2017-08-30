@@ -81,6 +81,38 @@ doListen(server, (err) => {
 })
 ```
 
+Want to use with promises or async/await?
+
+```js
+'use strict'
+
+const http = require('http')
+const {promisify} = require('util')
+const doListen = require('do-listen')
+
+const server = http.createServer()
+server.listen(8080)
+async function main() {
+  await doListen(server)
+}
+
+// or
+
+'use strict'
+
+const http = require('http')
+const {promisify} = require('util')
+const doListen = require('do-listen')
+
+const server = http.createServer()
+server.listen(8080)
+doListen(server).then(() => {
+  console.log('listening on', server.address().port)
+}).catch((err) => {
+  throw err
+})
+```
+
 ## Test
 
 ```bash
