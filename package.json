@@ -1,0 +1,25 @@
+{
+  "name": "do-listen",
+  "version": "0.1.0",
+  "description": "Listen to a server and call a callback on error or success",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test --cov"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "check-pkg": "^2.0.2",
+    "lintit": "^5.1.0",
+    "tap": "^10.2.2"
+  },
+  "license": "MIT",
+  "author": "Evan Lucas <evanlucas@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanlucas/do-listen"
+  },
+  "homepage": "https://github.com/evanlucas/do-listen",
+  "bugs": {
+    "url": "https://github.com/evanlucas/do-listen/issues"
+  }
+}
