@@ -55,11 +55,11 @@ $ npm install do-listen
 'use strict'
 
 const net = require('net')
-const onListen = require('on-listen')
+const doListen = require('do-listen')
 
 const server = net.createServer()
 server.listen(0)
-onListen(server, (err) => {
+doListen(server, (err) => {
   if (err) throw err
   console.log('listening on', server.address().port)
 })
@@ -71,11 +71,11 @@ This also works with http
 'use strict'
 
 const http = require('http')
-const onListen = require('on-listen')
+const doListen = require('do-listen')
 
 const server = http.createServer()
 server.listen(8080)
-onListen(server, (err) => {
+doListen(server, (err) => {
   if (err) throw err
   console.log('listening on', server.address().port)
 })
