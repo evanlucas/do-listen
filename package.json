@@ -9,7 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "check-pkg": "^2.0.2",
-    "lintit": "^5.1.0",
+    "lintit": "^6.0.0",
     "tap": "^10.2.2"
   },
   "license": "MIT",
