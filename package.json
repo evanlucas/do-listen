@@ -4,7 +4,7 @@
   "description": "Listen to a server and call a callback on error or success",
   "main": "index.js",
   "scripts": {
-    "test": "tap test --cov --100"
+    "test": "tap test/{test,node-8-and-up}.js --cov --100"
   },
   "dependencies": {},
   "devDependencies": {
