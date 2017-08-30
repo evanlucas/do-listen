@@ -1,6 +1,6 @@
 {
   "name": "do-listen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Listen to a server and call a callback on error or success",
   "main": "index.js",
   "scripts": {
