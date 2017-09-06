@@ -88,7 +88,7 @@ Want to use with promises or async/await?
 
 const http = require('http')
 const {promisify} = require('util')
-const doListen = require('do-listen')
+const doListen = promisify(require('do-listen'))
 
 const server = http.createServer()
 server.listen(8080)
@@ -96,13 +96,14 @@ async function main() {
   await doListen(server)
 }
 
+main()
 // or
 
 'use strict'
 
 const http = require('http')
 const {promisify} = require('util')
-const doListen = require('do-listen')
+const doListen = promisify(require('do-listen'))
 
 const server = http.createServer()
 server.listen(8080)
